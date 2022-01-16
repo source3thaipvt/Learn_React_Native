@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   Text,
   View,
+  ScrollView,
 } from 'react-native'
 import CardListItem from './src/components/CardListItem'
 import images from './src/res/images'
@@ -24,7 +25,8 @@ export default class App extends Component {
  render() {
     console.log('erro render'+this.state.count);
     return (
-      <View style={styles.container}>
+      <View >
+      <ScrollView  style={{paddingLeft:15, paddingRight:15}} contentContainerStyle={{backgroundColor:'#F00'}}>
         <TouchableOpacity
          style={styles.button}
          onPress={this.onPress}
@@ -37,7 +39,9 @@ export default class App extends Component {
           </Text>
           <CardListItem title='ahihi' images={images.fr_home11x}/>
           <CardListItem title='ahihi' images={images.fr_home21x}/>
+          <CardListItem title='ahihi' images={images.fr_home21x}/>
         </View>
+        </ScrollView>
       </View>
     )
   }
@@ -54,5 +58,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDDDDD',
     padding: 10,
     marginBottom: 10
-  }
+  },
+
 })
