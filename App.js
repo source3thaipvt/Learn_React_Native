@@ -45,9 +45,12 @@ export default class App extends Component {
           <View>
             <Text>You clicked {this.state.count} times</Text>
             <CardListItem title='dsadsads' image={images.fr_home11x}/>
-            {listItems.map(listItem =>
-             <CardListItem key={listItem.id} title={listItem.title} image={listItem.image}/>
-             )}
+            
+             <FlatList
+                 data={listItems}
+                 renderItem={({item})=> <CardListItem  title={item.title} image={item.image}/>}
+                 keyExtractor={item => item.id}
+             ></FlatList>
           </View>
         </ScrollView>
       </View>

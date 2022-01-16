@@ -4,7 +4,7 @@ import {Image, Text, View, StyleSheet} from 'react-native';
 import images from '../res/images';
 import sizes from '../res/sizes';
 export default function CardListItem(props) {
-  const {image, title} = props;
+  const {title,image} = props;
   return (
     <View style={styles.container}>
       <Text>Card Name {title}</Text>
