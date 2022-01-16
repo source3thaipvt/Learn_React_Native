@@ -4,10 +4,13 @@ import {Image, Text, View, StyleSheet} from 'react-native';
 import images from '../res/images';
 import sizes  from '../res/sizes';
 export default function CardListItem(props) {
+
   return (
     <View style={styles.container}>
-      <Text>Name Card List Item</Text>
-      <Image style={styles.categoryImage} source={images.fr_home13x} />
+      <Text>Card Name {props.title}</Text>
+      <Image 
+      style={styles.categoryImage} 
+      source={props.images} />
     </View>
   );
 }
@@ -15,12 +18,12 @@ const styles = StyleSheet.create({
     container:{
         alignItems: 'center',
         padding: 16,
-        shadowColor: '#2333',
-        shadowOpacity: 0.1,
+        shadowColor: '#000',
+        shadowOpacity: 0.2,
         shadowRadius: 20,
         shadowOffset: {width: 0, height: 0},
         borderColor: 'black',
-        backgroundColor: this.state,
+        backgroundColor: 'red',
         borderRadius: 10,
         borderWidth: 2,
         margin: 10,

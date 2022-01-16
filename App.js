@@ -6,6 +6,7 @@ import {
   View,
 } from 'react-native'
 import CardListItem from './src/components/CardListItem'
+import images from './src/res/images'
 
 export default class App extends Component {
   state = {
@@ -34,8 +35,8 @@ export default class App extends Component {
           <Text>
             You clicked { this.state.count } times
           </Text>
-          <CardListItem/>
-          <CardListItem/>
+          <CardListItem title='ahihi' images={images.fr_home11x}/>
+          <CardListItem title='ahihi' images={images.fr_home21x}/>
         </View>
       </View>
     )
