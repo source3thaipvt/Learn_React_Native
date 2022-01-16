@@ -8,8 +8,8 @@ import {
   FlatList,
 } from 'react-native';
 import { keyExtractor } from 'react-native/Libraries/Lists/VirtualizeUtils';
-import CardListItem from './src/components/CardListItem';
-import images from './src/res/images';
+
+import images from '../../res/images';
 
 export default class App extends Component {
   state = {
@@ -39,7 +39,7 @@ export default class App extends Component {
       <Text>Detail</Text>
         <ScrollView
           style={{paddingLeft: 15, paddingRight: 15}}
-          contentContainerStyle={{backgroundColor: '#F00'}}>
+          contentContainerStyle={{backgroundColor: '#A60'}}>
           <View>
 
           </View>

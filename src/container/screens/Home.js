@@ -34,21 +34,24 @@ export default class Home extends Component {
   render() {
     console.log('erro render' + this.state.count);
     const {listItems} = this.state;
+    const { navigation } = this.props;
     return (
       <View>
         <ScrollView
-          style={{paddingLeft: 15, paddingRight: 15}}
-          contentContainerStyle={{backgroundColor: '#F00'}}>
+          style={{backgroundColor: '#F00',paddingLeft: 15, paddingRight: 15}}>
           <TouchableOpacity style={styles.button} onPress={this.onPress}>
             <Text>Click me</Text>
           </TouchableOpacity>
           <View>
             <Text>You clicked {this.state.count} times</Text>
-            <CardListItem title='dsadsads' image={images.fr_home11x}/>
-            
              <FlatList
                  data={listItems}
-                 renderItem={({item})=> <CardListItem  title={item.title} image={item.image}/>}
+                 renderItem={({item})=>
+                  <CardListItem  
+                  title={item.title} 
+                  image={item.image}
+                  onPress={()=> navigation.navigate('Detail')}
+                  />}
                  keyExtractor={item => item.id}
              ></FlatList>
           </View>
