@@ -21,6 +21,7 @@
     "react-devtools": "react-devtools"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.9.8",
     "classnames": "^2.3.1",
     "dimensions": "^0.1.0",
     "path": "^0.12.7",

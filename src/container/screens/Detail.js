@@ -10,7 +10,7 @@ import {
 import { keyExtractor } from 'react-native/Libraries/Lists/VirtualizeUtils';
 import CardListItem from './src/components/CardListItem';
 import images from './src/res/images';
-import Home from './src/container/screens/Home'
+
 export default class App extends Component {
   state = {
     count: 0,
@@ -35,11 +35,25 @@ export default class App extends Component {
     console.log('erro render' + this.state.count);
     const {listItems} = this.state;
     return (
-     <Home/>
+      <View>
+      <Text>Detail</Text>
+        <ScrollView
+          style={{paddingLeft: 15, paddingRight: 15}}
+          contentContainerStyle={{backgroundColor: '#F00'}}>
+          <View>
+
+          </View>
+        </ScrollView>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    // alignItems: 'center',
+  },
   
 });

@@ -1,14 +1,19 @@
 import {size} from 'lodash';
 import React from 'react';
-import {Image, Text, View, StyleSheet} from 'react-native';
+import {Image, Text, View, StyleSheet, TouchableOpacity, Alert} from 'react-native';
 import images from '../res/images';
 import sizes from '../res/sizes';
 export default function CardListItem(props) {
-  const {title,image} = props;
+  const {title, image} = props;
   return (
     <View style={styles.container}>
-      <Text>Card Name {title}</Text>
-      <Image style={styles.categoryImage} source={image} />
+      <TouchableOpacity activeOpacity={0.5} onPress={() => {
+          Alert.alert('Onclick Item');
+          console.log('Click Item');
+      }}>
+        <Text>Card Name {title}</Text>
+        <Image style={styles.categoryImage} source={image} />
+      </TouchableOpacity>
     </View>
   );
 }
@@ -21,7 +26,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     shadowOffset: {width: 0, height: 0},
     borderColor: 'black',
-    backgroundColor: 'red',
+    backgroundColor: 'blue',
     borderRadius: 10,
     borderWidth: 2,
     margin: 10,
