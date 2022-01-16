@@ -20,7 +20,7 @@ export default class App extends Component {
       {id: 3, title: 'Item 3', image: images.fr_home31x},
       {id: 4, title: 'Item 4', image: images.fr_home41x},
       {id: 5, title: 'Item 5', image: images.fr_home51x},
-      {id: 6, title: 'Item 6', image: images.fr_home61x},
+      {id: 6, title: 'Item 6', image: images.fr_home11x},
     ],
   };
 
@@ -44,14 +44,10 @@ export default class App extends Component {
           </TouchableOpacity>
           <View>
             <Text>You clicked {this.state.count} times</Text>
-            {listItems.map(itemCard=>(
-                <CardListItem key={itemCard.id} itemCard={itemCard} />,
-                console.log('list map id ', this.state.listItems)
-            ))}
-            <FlatList data={listItems}
-                renderItem={({ item })=> <CardListItem itemCard={item} />}
-                keyExtractor={(item)=> itemCard.id}
-            />
+            <CardListItem title='dsadsads' image={images.fr_home11x}/>
+            {listItems.map(listItem =>
+             <CardListItem key={listItem.id} title={listItem.title} image={listItem.image}/>
+             )}
           </View>
         </ScrollView>
       </View>
