@@ -34,9 +34,12 @@ export default class App extends Component {
   render() {
     console.log('erro render' + this.state.count);
     const {listItems} = this.state;
+    const {route, navigation} =  this.props;
+    const { cardName, otherParams } = route.params;
     return (
       <View>
-      <Text>Detail</Text>
+      <Text>Detail {cardName}</Text>
+      <Text>otherParam {otherParams}</Text>
         <ScrollView
           style={{paddingLeft: 15, paddingRight: 15}}
           contentContainerStyle={{backgroundColor: '#A60'}}>

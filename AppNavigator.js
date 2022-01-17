@@ -10,8 +10,11 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} options={{ title: 'Home' }} />
-      <Stack.Screen name="Detail" component={Detail} options={{title: 'Detail'}} />
+      <Stack.Screen name="Home" component={Home} setOptions={{ title: 'Home' }} />
+      <Stack.Screen name="Detail" component={Detail} 
+      options={({ route }) => ({ title: route.params.cardName
+        })} 
+      />
     </Stack.Navigator>
   );
 }
