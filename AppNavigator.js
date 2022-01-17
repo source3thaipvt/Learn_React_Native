@@ -12,7 +12,10 @@ export default function AppNavigator() {
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} setOptions={{ title: 'Home' }} />
       <Stack.Screen name="Detail" component={Detail} 
-      options={({ route }) => ({ title: route.params.cardName
+      options={({ route }) => ({ title: route.params.cardName,
+      headerStyle:{
+        backgroundColor: '#AF7'
+      }
         })} 
       />
     </Stack.Navigator>

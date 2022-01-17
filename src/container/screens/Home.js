@@ -12,6 +12,7 @@ import CardListItem from '../../components/CardListItem';
 import images from '../../res/images';
 
 export default class Home extends Component {
+
   state = {
     count: 0,
     listItems: [
@@ -22,6 +23,7 @@ export default class Home extends Component {
       {id: 5, titles: 'Item 5', image: images.fr_home51x},
       {id: 6, titles: 'Item 6', image: images.fr_home11x},
     ],
+
   };
 
   onPress = () => {
