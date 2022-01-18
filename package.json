@@ -18,12 +18,14 @@
     "pod": "yarn install && cd ios && rm -rf Podfile.lock && rm -rf Pods && pod install --repo-update",
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
     "format": "prettier --write .",
-    "react-devtools": "react-devtools"
+    "react-devtools": "react-devtools",
+    "mock-server": "json-server ./src/mock_db/db.json"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
+    "axios": "^0.24.0",
     "classnames": "^2.3.1",
     "dimensions": "^0.1.0",
     "path": "^0.12.7",
@@ -43,6 +45,7 @@
     "babel-jest": "^27.4.5",
     "eslint": "^8.6.0",
     "jest": "^27.4.5",
+    "json-server": "^0.17.0",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-devtools": "^4.22.1",
     "react-test-renderer": "17.0.2"

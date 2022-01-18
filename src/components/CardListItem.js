@@ -4,14 +4,14 @@ import {Image, Text, View, StyleSheet, TouchableOpacity, Alert} from 'react-nati
 import images from '../res/images';
 import sizes from '../res/sizes';
 export default function CardListItem(props) {
-  const {title, image, onPress} = props;
+  const {category, onPress} = props;
   return (
     <View style={styles.container}>
       <TouchableOpacity activeOpacity={0.5} 
       onPress={onPress}
       >
-        <Text>Card Name {title}</Text>
-        <Image style={styles.categoryImage} source={image} />
+        <Text>Card Name s {category.title}</Text>
+        <Image style={styles.categoryImage} source={{uri: category.image}} />
       </TouchableOpacity>
     </View>
   );

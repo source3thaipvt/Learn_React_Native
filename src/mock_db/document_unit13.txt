@@ -1,0 +1,7 @@
+---------Bai 13: networking trong react-native
+npm install json-server --save-dev 
+add lineCoding script file package.json: "mock-server": json-server ./src/mock_db/db.json"
+npm install axios --save
+
+--save-dev: dung trong qua trinh s/d, ko co trong build code
+--save: co trong build code, luu vao package.json

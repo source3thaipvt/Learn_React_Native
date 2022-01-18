@@ -1,0 +1,40 @@
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+      products: [
+        {
+          id: 1,
+          image: {url: images.fr_home11x},
+          price: 120000,
+          name: 'San Pham 001',
+        },
+        {
+          id: 2,
+          image: {url: images.fr_home21x},
+          price: 220000,
+          name: 'San Pham 002',
+        },
+        {
+          id: 3,
+          image: {url: images.fr_home31x},
+          price: 320000,
+          name: 'San Pham 003',
+        },
+        {
+          id: 4,
+          image: {url: images.fr_home41x},
+          price: 420000,
+          name: 'San Pham 004',
+        },
+        {
+          id: 5,
+          image: {url: images.fr_home21x},
+          price: 520000,
+          name: 'San Pham 005',
+        },
+        
+      ],
+    }
+    
+  };

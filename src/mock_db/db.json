@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "titles": "Item 1",
+      "image": "https://bitly.com.vn/qh56nn"
+    },
+    {
+      "id": 2,
+      "titles": "Item 2",
+      "image": "https://bitly.com.vn/txvulw"
+    },
+    {
+      "id": 3,
+      "titles": "Item 3",
+      "image": "https://bitly.com.vn/txvulw"
+    },
+    {
+      "id": 4,
+      "titles": "Item 4",
+      "image": "https://bitly.com.vn/txvulw"
+    },
+    {
+      "id": 5,
+      "titles": "Item 5",
+      "image": "https://bitly.com.vn/qh56nn"
+    },
+    {
+      "id": 6,
+      "titles": "Item 6",
+      "image": "https://bitly.com.vn/txvulw"
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "San pham 06",
+      "title": "tesst post",
+      "image": "link",
+      "haha": "ko co gif"
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": {
+        "url": "https://bitly.com.vn/qh56nn"
+      },
+      "price": "120000",
+      "name": "San Pham 001"
+    },
+    {
+      "id": 2,
+      "image": {
+        "url": "https://bitly.com.vn/txvulw"
+      },
+      "price": "120000",
+      "name": "San Pham 002"
+    },
+    {
+      "id": 3,
+      "image": {
+        "url": "https://bitly.com.vn/qh56nn"
+      },
+      "price": "120000",
+      "name": "San Pham 003"
+    },
+    {
+      "id": 4,
+      "image": {
+        "url": "https://bitly.com.vn/txvulw"
+      },
+      "price": "120000",
+      "name": "San Pham 004"
+    },
+    {
+      "id": 5,
+      "image": {
+        "url": "https://bitly.com.vn/qh56nn"
+      },
+      "price": "120000",
+      "name": "San Pham 005"
+    },
+    {
+      "id": 5,
+      "image": {
+        "url": "https://bitly.com.vn/txvulw"
+      },
+      "price": "120000",
+      "name": "San Pham 005"
+    }
+  ]
+}
