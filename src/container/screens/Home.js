@@ -62,7 +62,7 @@ export default class Home extends Component {
           <View>
             <Text>You clicked {this.state.count} times</Text>
             <FlatList
-              data={this.state.categories}
+              data={this.state.listItems}
               renderItem={({item}) => (
                 <CardListItem
                   category={item}

@@ -11,7 +11,7 @@ export default function CardListItem(props) {
       onPress={onPress}
       >
         <Text>Card Name s {category.title}</Text>
-        <Image style={styles.categoryImage} source={{uri: category.image}} />
+        <Image style={styles.categoryImage} source={ category.image} />
       </TouchableOpacity>
     </View>
   );
