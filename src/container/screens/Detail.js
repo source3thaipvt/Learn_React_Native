@@ -21,7 +21,7 @@ export default class Detail extends React.Component {
           image: {url: images.fr_home11x},
           price: '120000',
           name: 'San Pham 001',
-          categoryid: 1,
+          categoryid: [1,2,3],
         },
         {
           id: 2,
@@ -35,7 +35,7 @@ export default class Detail extends React.Component {
           image: {url: images.fr_home31x},
           price: '320000',
           name: 'San Pham 003',
-          categoryid: 2,
+          categoryid: [2,1],
         },
         {
           id: 4,
@@ -49,14 +49,14 @@ export default class Detail extends React.Component {
           image: {url: images.fr_home21x},
           price: '520000',
           name: 'San Pham 005',
-          categoryid: 3,
+          categoryid: [3,1],
         },
         {
           id: 6,
           image: {url: images.fr_home31x},
           price: '520000',
           name: 'San Pham 005',
-          categoryid: 3,
+          categoryid: [1,3],
         },
       ],
     };

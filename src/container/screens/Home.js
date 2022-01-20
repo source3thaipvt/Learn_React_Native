@@ -29,7 +29,7 @@ export default class Home extends Component {
     };
   }
   componentDidMount(){
-    axios.get('http://localhost:3000/categories')
+    axios.get('/categories')
     .then(res=>{
       this.setState({
         categories: res.data,
