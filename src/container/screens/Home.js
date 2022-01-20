@@ -21,9 +21,9 @@ export default class Home extends Component {
         {id: 1, titles: 'Item 1', image: images.fr_home11x},
         {id: 2, titles: 'Item 2', image: images.fr_home21x},
         {id: 3, titles: 'Item 3', image: images.fr_home31x},
-        {id: 4, titles: 'Item 4', image: images.fr_home41x},
-        {id: 5, titles: 'Item 5', image: images.fr_home51x},
-        {id: 6, titles: 'Item 6', image: images.fr_home11x},
+        {id: 1, titles: 'Item 4', image: images.fr_home41x},
+        {id: 2, titles: 'Item 5', image: images.fr_home51x},
+        {id: 3, titles: 'Item 6', image: images.fr_home11x},
       ],
       categories: []
     };
@@ -70,6 +70,7 @@ export default class Home extends Component {
                     navigation.navigate('Detail', {
                       cardName: item.titles,
                       otherParams: 'Other Params: ' + item.titles,
+                      categoryid: item.id
                     })
                   }
                 />
