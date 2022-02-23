@@ -28,6 +28,7 @@ export default class Home extends Component {
       categories: []
     };
   }
+  
   componentDidMount(){
     axios.get('/categories')
     .then(res=>{
@@ -75,7 +76,8 @@ export default class Home extends Component {
                   }
                 />
               )}
-              keyExtractor={item => item.id}></FlatList>
+              keyExtractor={item => `${item.id}`}
+              />
           </View>
         </View>
       </View>

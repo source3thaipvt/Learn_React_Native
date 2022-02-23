@@ -10,7 +10,7 @@ export default function CardListItem(props) {
       <TouchableOpacity activeOpacity={0.5} 
       onPress={onPress}
       >
-        <Text>Card Name s {category.title}</Text>
+        <Text>Card Name s {category.titles}</Text>
         <Image style={styles.categoryImage} source={ category.image} />
       </TouchableOpacity>
     </View>

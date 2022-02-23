@@ -5,6 +5,7 @@ import axios from 'axios';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './AppNavigator';
 import Home from './src/container/screens/Home';
+import TabBottom from './TabBottom';
 
 axios.defaults.baseURL ='http://localhost:3000';
 export default class App extends Component {
@@ -12,7 +13,8 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <NavigationContainer>
-          <AppNavigator/>
+          
+          <TabBottom/>
         </NavigationContainer>
       </View>
     );

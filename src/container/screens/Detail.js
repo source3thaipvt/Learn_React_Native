@@ -65,22 +65,25 @@ export default class Detail extends React.Component {
   render() {
     const {route, navigation} = this.props;
     const {cardName, otherParams, categoryid} = route.params;
-    const listCategoryId = this.state.products.map(list => {
-        if(list.categoryid === categoryid ){
-          return list;
+    const filterList = this.state.products.filter(list =>{
+      if(typeof list.categoryid === 'object' ){
+        for( let i of list.categoryid){
+          if(i=== categoryid){
+            console.log('i', i)
+            return list;
+          }
         }
-        {
-          return ;
-        }
-    });
-    console.log(listCategoryId);
+      }
+    })
+    console.log(filterList,'filter log')
+   
     return (
       <View style={styles.container}>
         <Text>Detail {cardName}</Text>
         <Text>otherParam {otherParams}</Text>
         <Text>otherParamID {categoryid}</Text>
         <FlatList
-          data={listCategoryId}
+          data={filterList}
           numColumns={2}
           renderItem={({item}) => (
             <View style={styles.wapper}>
